@@ -43,4 +43,12 @@ document.querySelector('button').addEventListener('click', function () {
         console.log(over_65.toFixed(2) + "€");
     }
 
+    // // Altrimenti il passeggero non potrà usufruire di nessuna scontistica.
+     else {
+
+        // // Stampo in console il prezzo della tratta per il passeggero.
+        const km_price = (0.21 * km_percorsi.value);
+        console.log(km_price.toFixed(2) + "€");
+    }
+
 })
