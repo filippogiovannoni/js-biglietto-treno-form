@@ -31,5 +31,16 @@ document.querySelector('button').addEventListener('click', function () {
         //Stampo in console il prezzo scontato per i minorenni
         console.log(under_18.toFixed(2) + "€");
     }
-})
 
+    // Altrimenti se il passeggero ha un'età superiore ai 65 anni
+    else if (user_age.value > 65) {
+
+        // Verrà applicato uno sconto del 40% al tariffario
+        const km_price = (0.21 * km_percorsi.value);
+        const over_65 = (km_price - (km_price / 100 * 40));
+
+        // Stampo in console il prezzo della tratta per il passeggero over 65
+        console.log(over_65.toFixed(2) + "€");
+    }
+
+})
