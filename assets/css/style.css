@@ -1,0 +1,13 @@
+input {
+    border-style: solid;
+    border-color: #0D6EFD;
+    outline: none;
+}
+
+.rounded_2 {
+    border-radius: 20px;
+}
+
+button {
+    border: none;
+}
