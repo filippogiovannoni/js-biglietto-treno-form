@@ -26,7 +26,7 @@
 
                         <div class="fullname d-flex flex-column px-5">
                             <span class="text-center text-primary py-3">Nome Cognome</span>
-                            <input class=" rounded-3" type="text" name="full-name" id="full-name">
+                            <input class=" rounded-3" type="text" name="full_name" id="full_name">
                         </div>
 
                         <div class="km d-flex flex-column px-5">
@@ -35,18 +35,56 @@
                         </div>
 
                         <div class="age d-flex flex-column px-5">
-                            <span class="text-center text-primary py-3">Fascia d'età</span>
+                            <span class="text-center text-primary py-3">Età del passeggero</span>
+                            
                             <input class="rounded-3" type="text" name="user_age" id="user_age">
                         </div>
                     </div>
 
                     <div class="buttons d-flex justify-content-center gap-3 pt-5 pb-2">
-                        <button type="button" class="btn btn-primary rounded-3 text-white">Genera</button>
-                        <button type="button" class="btn btn-danger rounded-3 text-white">Annulla</button>
+                        <button type="button" class="generate btn btn-primary rounded-3 text-white">Genera</button>
+                        <button type="button" class="delete btn btn-danger rounded-3 text-white">Annulla</button>
                     </div>
 
                 </div>
 
+            </div>
+        </div>
+
+        <div class="bottom">
+            <h1 class="text-uppercase text-center text-white fs-5 fw-bold py-3">Il tuo biglietto</h1>
+
+            <div class="container bg-white rounded-2">
+                <h2 class="text-uppercase text-dark fs-5 fw-bold pt-3">Dettaglio passeggeri</h2>
+                
+                    <hr>
+                <div class="d-flex justify-content-evenly">
+                    <div class="name bg-secondary px-3 pt-2 pb-5">
+                        <h2 class="text-uppercase text-white fs-5 fw-bold">Nome passeggero</h2>
+                        <div class="text-dark text-capitalize fw-bold" id="fullname"></div>
+                    </div>
+                    
+                    <div class="offer">
+                        <h3 class="fs-3">Offerta</h3>
+                        <span>Biglietto Standard</span>
+                    </div>
+                    <div class="coach">
+                        <h3 class="fs-3">Carrozza</h3>
+                        <span id="coach"></span>
+                    </div>
+                    <div class="code">
+                        <h3 class="fs-3">Codice CP</h3>
+                        <span id="code"></span>
+                    </div>
+                    <div class="price">
+                        <h3 class="fs-3">Costo biglietto</h3>
+                        <span id="price"></span>
+                    </div>
+
+
+
+
+                </div>
             </div>
         </div>
 
