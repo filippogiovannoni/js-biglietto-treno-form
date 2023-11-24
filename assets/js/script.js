@@ -6,6 +6,9 @@
 - document.getElementById
 - document.querySelector
 - addEventListener
+- Math.floor / Math.random
+- .toFixed
+
 
 Tariffario
 - 0.21€ / km 
@@ -16,10 +19,17 @@ Tariffario
 // Seleziono con il selettore la classe generate e invoco la funzione anonima
 document.querySelector('.generate').addEventListener('click', function () {
 
-    // Al momento del click viene loggato in console il valore dei chilometri e dell'età
-    console.log(km_percorsi.value);
-    console.log(user_age.value);
+    // Al momento del click viene stampato in pagina il nome il cognome del passeggero
     document.getElementById('fullname').innerHTML = full_name.value
+
+    //Viene assegnato il codice biglietto
+    let code = Math.floor((Math.random() * 100) + 9000);
+    document.getElementById("code").innerHTML = code;
+
+    //Viene assegnato anche il numero della carrozza
+    let coach = Math.floor((Math.random() * 9) + 1);
+    document.getElementById("coach").innerHTML = coach;
+
 
     // Se il passeggero ha un'età minore di 18 anni
     if (user_age.value < 18) {
